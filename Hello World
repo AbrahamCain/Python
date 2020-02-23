@@ -1,0 +1,5 @@
+# This is a program that simply prints the line " Hello World! " to the terminal.
+
+print("Hello World!")
+
+exit(0)
