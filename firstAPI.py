@@ -1,4 +1,4 @@
- #An API in python
+#An API in python
 
 import flask
 from flask import request, jsonify
@@ -31,7 +31,7 @@ books = [
 #Create a homepage with routing and and HTML webpage
 @app.route('/', methods=['GET'])
 def home():
-    return "<h1>Lord of the Rings API</h1><p>This site is a prototype API for distant reading of LOTR characters.</p>"
+    return "<h1>Lord of the Rings API</h1><p>This site is a prototype API for distant reading of LOTR characters.</p><button onclick=\"window.location.href='http://127.0.0.1:5000/links';\">One Link to Rule Them All ;)</button>"
 
 
 #A route to return all the available entries in our catalog in JSON format
@@ -61,5 +61,8 @@ def api_id():
     #Use jsonify to convert list of dicts to JSON format
     return jsonify(results)
 
+@app.route('/links', methods=['GET'])
+def buttons():
+    return "<h1>Links</h1><button onclick=\"window.location.href='http://google.com';\">GOOGLE It</button><button onclick=\"window.location.href='http://codecademy.com';\">Learn To Code</button><button onclick=\"window.location.href='http://127.0.0.1:5000/api/v1/resources/books/all';\">LOTD Characters</button>"
 
 app.run()
