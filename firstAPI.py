@@ -1,4 +1,6 @@
 #An API in python
+#To use this, open a terminal or CMD.exe and type: python <FileName>.py
+#This spins up a server on your computer which is then accessible at http://127.0.0.1:5000 in your web browser
 
 import flask
 from flask import request, jsonify
@@ -53,7 +55,9 @@ def api_id():
     results = []
 
     #Loop through the data and match results that fit the requested ID
-    # IDs are unique, but other fields might return many results
+    #IDs are unique, but other fields might return many results
+    #To query a specific character data book, use the URL query ?id=characterIdNumber 
+                #For exeample:    http://127.0.0.1:5000/api/v1/resources/books?id=0
     for book in books:
         if book['id'] == id:
             results.append(book)
