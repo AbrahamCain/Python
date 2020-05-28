@@ -11,7 +11,10 @@ import pyperclip
 #The keys will be the word you put after the command:
     #"python myClip.py <insertKeywordHere>"
 #The values in triple quotes are what will be copied to your clipboard in the case of 
-TEXT = {'agree' : """Yes, I agree. That sounds fine to me.""", 'busy': """Sorry, can we do this later this week or next week?""", 'upsell': """Would you consider making this a monthly donation?"""}
+TEXT = {'bye': """Thank you for your consideration,
+
+Sincerely,
+Abraham Cain""", 'busy': """Sorry we missed your call, our available hours are now 9AM-5PM Monday-Friday. Please feel free to call us back at 111-111-1111 during those hours. Thank you and have a great day.""", 'upsell': """Would you consider making this a monthly donation?"""}
 
 import sys
 if (len(sys.argv) < 2):
