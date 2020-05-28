@@ -1,5 +1,5 @@
 #myClip.py is a program that allows you to copy the contents of something to your clipboard based upon an option list
-#this module isn't part of the standard library so uncomment the next 3 lines if you haven't installed pyperclip on Windows
+#the pyperclip module isn't part of the standard library so uncomment the next 3 lines if you haven't installed pyperclip on Windows
 #import os
 #import sys
 #os.system("pip install pyperclip")
