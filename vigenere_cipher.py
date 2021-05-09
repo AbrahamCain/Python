@@ -1,4 +1,4 @@
-#A cipher breaker for vigenere cipher
+#A cipher cracker for vigenere cipher
 key = input("Enter Ciphertext: ").lower()
 cipherText = input("Enter KeyWord: ").lower() 
 decoded = []
@@ -17,7 +17,7 @@ if len(cipherText) < len(key):
 cnt = 0
 for i in cipherText:
     
-    #make a easier to work with variable for both
+    #make an easier-to-work-with variable for both
     l1 = i
     l2 = key[cnt]
     
@@ -29,7 +29,7 @@ for i in cipherText:
     elif(ord(l1) == ord(l2)):
         l3 = chr(97)
     else:
-        print("oops. something went wron...")
+        print("oops. something went wrong...")
     
     #Add the decoded letter to the Decoded Message
     decoded.append(l3)
